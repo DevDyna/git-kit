@@ -4,14 +4,25 @@ labels: [bug]
 assignees: DevDyna
 body:
   - type: checkboxes
-    id: base
+    id: check-base
     attributes:
-      label: Base
+      label: Check Base
       description: base-desc
       options:
-        - label: label-1
+        - label: 1 label required
           required: true
-        - label: label-2
+        - label: 2 label optional
+          required: false
+
+    - type: checkboxes
+    id: optional
+    attributes:
+      label: Optional
+      description: optional-desc
+      options:
+        - label: 1 option
+          required: false
+        - label: 2 option
           required: false
           
   - type: dropdown
