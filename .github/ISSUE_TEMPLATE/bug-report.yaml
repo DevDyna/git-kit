@@ -1,66 +1,44 @@
 name: Bug Report
-description: Have you found a bug ? Squash it!
-labels: [bug, need support]
+description: You found a bug
+labels: [bug]
 assignees: DevDyna
 body:
   - type: checkboxes
-    id: new-issue
+    id: base
     attributes:
-      label: Core Section
-      description: Biip Boop , Something happen !
+      label: Base
+      description: base-desc
       options:
-        - label: I have searched on opened [issues](https://github.com/DevDyna/IronBerry/issues) and [discussions](https://github.com/DevDyna/IronBerry/discussions) of this repository
+        - label: label-1
           required: true
-        - label: I'm using the latest version of this project
-          required: true
-
-          
           
   - type: dropdown
-    id: environment
+    id: list-selection
     attributes:
-      label: Environment
-      description: Blup Blup , We are on deep !
+      label: List Selection
+      description: list-desc
       options:
-        - Singleplayer/Local | NO LAN
-        - Multiplayer        | LAN
-        - Multiplayer        | Dedicated server
+        - 0
+        - 1
+        - 2
     validations:
       required: true
         
   - type: input
-    id: version
+    id: text-box
     attributes:
-      label: Modpack Version
-      placeholder: ex. 0.7c
-      description: Insert a valid version (beta and releases allowed)
+      label: Text Box
+      placeholder: example
+      description: desc-box
     validations:
       required: true
 
   - type: textarea
-    id: description
+    id: large-text-box
     attributes:
-      label: Description
-      description: Describe what happen to you
-      placeholder: sqrt(-1) - sqrt(i) = -0,707106781 + 0,292893219 i
+      label: Large Text Box
+      description: desc-large-box
+      placeholder: example
     validations:
       required: true
       
-      
-  - type: textarea
-    id: procedure
-    attributes:
-      label: Procedure
-      description: Describe layer by layer about how to reproduce it (please not from prehistory to now , only basics..)
-      placeholder: f(x y)=log z
-    validations:
-      required: true
-
-  - type: textarea
-    id: other
-    attributes:
-      label: Additional things
-      description: Anything else , included videos , gifs , screenshots and more..
-      placeholder: ln x- ln y
-    validations:
-      required: true
