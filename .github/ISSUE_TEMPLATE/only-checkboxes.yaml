@@ -37,21 +37,3 @@ body:
     validations:
       required: true
         
-  - type: input
-    id: text-box
-    attributes:
-      label: Text Box
-      placeholder: example
-      description: desc-box
-    validations:
-      required: true
-
-  - type: textarea
-    id: large-text-box
-    attributes:
-      label: Large Text Box
-      description: desc-large-box
-      placeholder: example
-    validations:
-      required: true
-      
