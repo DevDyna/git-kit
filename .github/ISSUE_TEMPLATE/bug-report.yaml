@@ -11,6 +11,8 @@ body:
       options:
         - label: label-1
           required: true
+        - label: label-1
+          required: false
           
   - type: dropdown
     id: list-selection
