@@ -9,9 +9,9 @@ body:
       label: Check Base
       description: base-desc
       options:
-        - label: 1 label required
+        - label: 1-label required
           required: true
-        - label: 2 label optional
+        - label: 2-label optional
           required: false
 
     - type: checkboxes
@@ -20,9 +20,9 @@ body:
       label: Optional
       description: optional-desc
       options:
-        - label: 1 option
+        - label: 1-option
           required: false
-        - label: 2 option
+        - label: 2-option
           required: false
           
   - type: dropdown
