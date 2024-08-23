@@ -14,7 +14,7 @@ body:
         - label: 2-label optional
           required: false
 
-    - type: checkboxes
+  - type: checkboxes
     id: optional
     attributes:
       label: Optional
