@@ -1,5 +1,5 @@
 blank_issues_enabled: false
 contact_links:
-  - name: name
+  - name: External Link
     url: https://github.com/DevDyna/git-kit
-    about: extra
+    about: Description
